@@ -1,0 +1,132 @@
+:root {
+    --main-font:'Open Sans', sans-serif;
+    --second-font: 'Raleway', sans-serif;
+    --blue-color: #08A6E4;
+    --red-color: #FB3B64;
+    --green-color: #55DFB4;
+    --gray-dark: #707070;
+    --gray-medium: #95989A;
+    --gray-light: #A5A5A5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+
+}
+
+header{
+    box-shadow: 0px 3px 6px #00000029;
+    font-family: var(--main-font);
+}
+
+.header__container {
+    max-width: 1352px;
+    width: 100%;
+    height: 70px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    opacity: 1;
+}
+
+.header__logo {
+    text-align: left;
+    font-size: 32px;
+    letter-spacing: 0;
+    color: var(--blue-color);
+    opacity: 1;
+    font-weight: lighter;
+    text-decoration: none;
+    padding-left: 40px;
+}
+
+.header__container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.header__nav {
+    padding-right: 40px;
+}
+
+.nav__link a {
+    text-decoration: none;
+    border-bottom: 4px solid transparent;
+    display: inline-block;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3.28px;
+    color: var(--gray-light);
+    opacity: 1;
+    font-family: var(--second-font);
+    margin-right: 60px;
+    padding: 29px 0;
+}
+
+.nav__link a:hover {
+    border-bottom: 4px solid var(--blue-color);
+    color: #000000;
+}
+/*.......................................................................................*/
+.shop__container {
+    padding-top: 130px;
+    height: 700px;
+    max-width: 1352px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.shop__container h1 {
+    text-align: center;
+    font-size: 49px;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+    font-family: var(--second-font);
+    font-weight: 400;
+}
+
+.shop__container p {
+    text-align: center;
+    font-family: var(--second-font);
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+    margin-top: 20px;
+    padding-bottom: 38px;
+}
+
+.shop__btn {
+    text-decoration: none;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 40px;
+    opacity: 1;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    font-family: var(--main-font);
+    letter-spacing: 0;
+    color: #FFFFFF;
+    background-color: var(--blue-color);
+    display: inline-block;
+    padding: 22px 157px;
+
+}
+
+.shop__img {
+    height: 600px;
+    background-image: url(../images/Background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
