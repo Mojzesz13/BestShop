@@ -15,7 +15,6 @@
 
 body {
     font-family: sans-serif;
-
 }
 
 header{
@@ -25,7 +24,6 @@ header{
 
 .header__container {
     max-width: 1352px;
-    width: 100%;
     height: 70px;
     margin: 0 auto;
     display: flex;
@@ -75,17 +73,16 @@ header{
     border-bottom: 4px solid var(--blue-color);
     color: #000000;
 }
-/*.......................................................................................*/
+/*.................................................................................................END OF  HEADER....*/
 .shop__container {
     padding-top: 130px;
-    height: 700px;
+    height: auto;
     max-width: 1352px;
-    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
 
-.shop__container h1 {
+.shop__title {
     text-align: center;
     font-size: 49px;
     letter-spacing: 0;
@@ -95,7 +92,7 @@ header{
     font-weight: 400;
 }
 
-.shop__container p {
+.shop__text {
     text-align: center;
     font-family: var(--second-font);
     font-size: 16px;
@@ -121,7 +118,6 @@ header{
     background-color: var(--blue-color);
     display: inline-block;
     padding: 22px 157px;
-
 }
 
 .shop__img {
@@ -129,4 +125,275 @@ header{
     background-image: url(../images/Background.png);
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0 auto;
+}
+/*..................................................................................END OF SHOP CONTAINER SECTION....*/
+.ad__container {
+    height: 531px;
+    max-width: 1352px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ad__text {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 400;
+    font-family: var(--second-font);
+    letter-spacing: 0;
+    color: #000000;
+    opacity: 1;
+    margin-bottom: 115px;
+    margin-top: 50px;
+}
+
+.add__boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 0 auto;
+    height: 1000px;
+}
+
+.ad__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 114px;
+    height: 160px;
+    font-size: 50px;
+}
+
+.ad__box__exception {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 114px;
+    height: 140px;
+    font-size: 50px;
+}
+
+.ad__dots {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+    left: 25px;
+}
+
+.ad__icons {
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 25px;
+}
+
+.ad__icons__exception {
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 70px;
+    height: 60px;
+    left: 20px;
+    top: 10px;
+}
+
+.ad__red {
+    background-color: var(--red-color);
+}
+
+.ad__person {
+    background-image: url(../images/Person.svg);
+}
+
+.ad__blue {
+    background-color: var(--blue-color);
+}
+
+.ad__eye{
+    background-image: url(../images/Eye.svg);
+}
+
+.ad__green{
+    background-color: var(--green-color);
+}
+
+.ad__catalog {
+    background-image: url(../images/Catalog.svg);
+}
+
+.ad__numbers {
+    font-weight: 800;
+    font-size: 20px;
+    font-family: var(--second-font);
+    letter-spacing: 5.96px;
+    color: #000000;
+    opacity: 1;
+}
+
+.ad__info {
+    font-weight: 400;
+    font-size: 19px;
+    font-family: var(--second-font);
+    color: var(--gray-light);
+    opacity: 1;
+}
+
+.ad__info__exception{
+    font-weight: 400;
+    font-size: 19px;
+    font-family: var(--second-font);
+    color: var(--gray-light);
+    opacity: 1;
+    width: 130px;
+}
+/*..............................................................................................END OF SECTION AD....*/
+.information {
+    height: 1395px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F7F7F7;
+}
+
+.info__position {
+    height: 1185px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info__first {
+    width: 1124px;
+    height: 370px;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.info__text {
+    width: 533px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.info__title {
+    font-size: 28px;
+    font-family: var(--second-font);
+    font-weight: 600;
+    letter-spacing: 0;
+    color: #000000;
+    width: auto;
+    height: 36px;
+    text-align: left;
+    padding-top: 80px;
+}
+
+.info__paragraph {
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: 400;
+    width: 400px;
+    height:66px;
+    text-align: left;
+    letter-spacing: 1px;
+
+}
+
+.info__paragraph::after {
+    content:"";
+    display: block;
+    border-bottom: 4px solid var(--red-color);
+    padding-top: 70px;
+    width: 280px;
+}
+
+.info__elements{
+    position: relative;
+    width: 433px;
+    height: 294px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 38px;
+}
+
+.info__pictures {
+    background-image: url(../images/Macbook.png);
+    width: 386px;
+    height: 216px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+
+
+}
+
+.info__figure {
+    width: 170px;
+    height: 170px;
+    background-color: var(--red-color);
+    position: absolute;
+    border-radius: 41px;
+    left: 220px;
+    margin-bottom: 80px;
+    z-index: 0;
+    transform: rotate(45deg);
+}
+/*...................................................................koniec pierwszej  czesci secji 3*/
+
+
+.mobile__section {
+    width: 1124px;
+    height: 370px;
+    background-color: white;
+    display: flex;
+}
+
+.mobile__info {
+    width: 426px;
+    height: 328px;
+    margin-left: 70px;
+    margin-top: 12px;
+    margin-right: 192px;
+}
+
+.mobile__text {
+    width: 416px;
+    height: 224px;
+    background-color: darkseagreen;
+    margin-top: 75px;
+}
+
+.mobile__pictures {
+    background-image: url(../images/iPhone.png);
+    background-position: center;
+    background-size: cover;
+    width: 426px;
+    height: 328px;
+    position: absolute;
+    z-index: 1;
+}
+
+.mobile__figure{
+    width: 320px;
+    height: 320px;
+    background-color: var(--blue-color);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
 }
