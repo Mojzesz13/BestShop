@@ -17,7 +17,7 @@ body {
     font-family: sans-serif;
 }
 
-header{
+header {
     box-shadow: 0px 3px 6px #00000029;
     font-family: var(--main-font);
 }
@@ -73,7 +73,7 @@ header{
     border-bottom: 4px solid var(--blue-color);
     color: #000000;
 }
-/*.................................................................................................END OF  HEADER....*/
+/*.........................................................................................END OF 1 SECTION....*/
 .shop__container {
     padding-top: 130px;
     height: auto;
@@ -127,7 +127,7 @@ header{
     background-repeat: no-repeat;
     margin: 0 auto;
 }
-/*..................................................................................END OF SHOP CONTAINER SECTION....*/
+/*........................................................................................END OF 2 SECTION ....*/
 .ad__container {
     height: 531px;
     max-width: 1352px;
@@ -252,8 +252,8 @@ header{
     opacity: 1;
     width: 130px;
 }
-/*..............................................................................................END OF SECTION AD....*/
-.information {
+/*.........................................................................................END OF 3 SECTION ....*/
+.information__container {
     height: 1395px;
     width: 100%;
     margin: 0 auto;
@@ -279,6 +279,7 @@ header{
     background-color: white;
     display: flex;
     justify-content: space-evenly;
+    border-radius: 5px;
 
 }
 
@@ -294,7 +295,7 @@ header{
 .info__title {
     font-size: 28px;
     font-family: var(--second-font);
-    font-weight: 600;
+    font-weight: 400;
     letter-spacing: 0;
     color: #000000;
     width: auto;
@@ -305,12 +306,13 @@ header{
 
 .info__paragraph {
     font-family: var(--main-font);
-    font-size: 16px;
+    font-size: 13px;
     font-weight: 400;
     width: 400px;
     height:66px;
     text-align: left;
     letter-spacing: 1px;
+    line-height: 1.5;
 
 }
 
@@ -319,7 +321,7 @@ header{
     display: block;
     border-bottom: 4px solid var(--red-color);
     padding-top: 70px;
-    width: 280px;
+    width: 310px;
 }
 
 .info__elements{
@@ -354,14 +356,15 @@ header{
     z-index: 0;
     transform: rotate(45deg);
 }
-/*...................................................................koniec pierwszej  czesci secji 3*/
+/*................................section 4 second part ...................................................*/
 
 
-.mobile__section {
+.info__second {
     width: 1124px;
     height: 370px;
     background-color: white;
     display: flex;
+    border-radius: 5px;
 }
 
 .mobile__info {
@@ -370,13 +373,7 @@ header{
     margin-left: 70px;
     margin-top: 12px;
     margin-right: 192px;
-}
-
-.mobile__text {
-    width: 416px;
-    height: 224px;
-    background-color: darkseagreen;
-    margin-top: 75px;
+    position: relative;
 }
 
 .mobile__pictures {
@@ -387,6 +384,8 @@ header{
     height: 328px;
     position: absolute;
     z-index: 1;
+    top: 15px;
+
 }
 
 .mobile__figure{
@@ -397,3 +396,323 @@ header{
     border-radius: 50%;
     z-index: 0;
 }
+
+.mobile__text {
+    width: 416px;
+    height: 224px;
+    margin-top: 75px;
+    margin-right: 50px;
+}
+
+.mobile__title {
+    font-size: 28px;
+    font-family: var(--second-font);
+    font-weight: 400;
+    color: #000000;
+    width: 236px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.mobile__paragraph {
+    font-family: var(--main-font);
+    font-size: 13px;
+    font-weight: 400;
+    width: 400px;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding-top: 30px;
+
+}
+
+.mobile__paragraph::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid var(--blue-color);
+    padding-top: 60px;
+    width: 310px;
+}
+/*....................................section 4 part  third...................................................*/
+.info__third {
+    width: 1124px;
+    height: 370px;
+    background-color: #F7F7F7;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.trumpet__text {
+    width: 623px;
+    height: 370px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.trumpet__title {
+    font-size: 28px;
+    font-family: var(--second-font);
+    font-weight: 400;
+    color: #000000;
+    width: 304px;
+    text-align: left;
+    line-height: 1.5;
+    padding-top: 75px;
+    margin-left: 35px;
+}
+
+.trumpet__paragraph {
+    font-family: var(--main-font);
+    font-size: 13px;
+    font-weight: 400;
+    width: 500px;
+    text-align: left;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding-top: 30px;
+    margin-left: 35px;
+}
+
+.trumpet__paragraph::after {
+    content: "";
+    display: block;
+    border-bottom: 4px solid var(--green-color);
+    padding-top: 60px;
+    width: 310px;
+}
+
+.trumpet__green__box {
+    width: 440px;
+    height: 370px;
+    background-color: var(--green-color);
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+}
+
+.trumpet__picture {
+    width: 296px;
+    height: 207px;
+    background-image: url(../images/Trumpet.png);
+    background-position: center;
+    background-size: cover;
+    margin-top: 98px;
+    margin-left: 62px;
+}
+/*.........................................................................................END OF 4 SECTION ....*/
+
+.pricing__container {
+    height: 610px;
+    max-width: 1266px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 106px;
+
+}
+
+.pricing__header {
+    width: 1266px;
+    height: 36px;
+    font-size: 36px;
+    font-family: var(--second-font);
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.pricing__offers {
+
+    display: flex;
+    flex-direction: row;
+    justify-content:  space-between;
+    margin-top: 71px;
+}
+
+.pricing__box {
+    width: 372px;
+    height: 461px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.red__box {
+    border:1px solid var(--red-color);
+
+
+}
+
+.pricing__offers .blue__box {
+    border: 1px solid var(--blue-color);
+    width: 405px;
+    height: 500px;
+    margin-top: -20px;
+    box-shadow: 5px 10px 27px #07ACE629;
+
+}
+
+.green__box {
+    border: 1px solid var(--green-color);
+}
+
+.pricing__box__title {
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 21px;
+    margin-top: 38px;
+
+}
+
+.pricing__box__price__red {
+    font-family: var(--main-font);
+    font-size: 46px;
+    font-weight: 300;
+    margin-top: 30px;
+    color: var(--red-color);
+}
+
+.pricing__box__price__blue {
+    font-family: var(--main-font);
+    font-size: 46px;
+    font-weight: 300;
+    margin-top: 30px;
+    color: var(--blue-color);
+}
+
+.pricing__box__price__green {
+    font-family: var(--main-font);
+    font-size: 46px;
+    font-weight: 300;
+    margin-top: 30px;
+    color: var(--green-color);
+}
+
+.pricing__section__btn {
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 23px;
+    color: white;
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 80px;
+}
+
+.pricing__section__btn__blue {
+    font-size: 13px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 23px;
+    color: white;
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 120px;
+}
+
+.pricing__section__btn .red__btn {
+    background-color: var(--red-color);
+    padding: 16px 57px ;
+    text-decoration: none;
+    border-radius: 23px;
+    color: white;
+}
+
+.pricing__section__btn__blue .blue__btn {
+    background-color: var(--blue-color);
+    padding: 16px 57px;
+    text-decoration: none;
+    border-radius: 23px;
+    color: white;
+}
+
+.pricing__section__btn .green__btn {
+    background-color: var(--green-color);
+    padding: 16px 57px;
+    text-decoration: none;
+    border-radius: 23px;
+    color: white;
+}
+/*.....................................................................checkbox................................*/
+
+.pricing__box__list {
+
+
+    line-height: 2.5;
+    font-size: 14px;
+    font-family: var(--second_font);
+    margin-top: 60px  ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+/* Customize the label (the container) */
+.pricing__box__list__checkbox {
+    display: block;
+    position: relative;
+
+
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.pricing__box__list__checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 10px;
+    left: 105px;
+    height: 11px;
+    width: 11px;
+    background-image: url(../images/Close.svg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+/* On mouse-over, add a grey background color */
+.pricing__box__list__checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+    border-radius: 6px;
+}
+
+/* When the checkbox is checked, add a blue background */
+.pricing__box__list__checkbox input:checked ~ .checkmark {
+    background-image: url(../images/Ckechmark-1.svg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.pricing__box__list__checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+
+
+
+
+
