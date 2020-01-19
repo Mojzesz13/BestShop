@@ -18,7 +18,7 @@ body {
 }
 
 header {
-    box-shadow: 0px 3px 6px #00000029;
+    box-shadow: 0 3px 6px #00000029;
     font-family: var(--main-font);
 }
 
@@ -280,7 +280,6 @@ header {
     display: flex;
     justify-content: space-evenly;
     border-radius: 5px;
-
 }
 
 .info__text {
@@ -313,7 +312,6 @@ header {
     text-align: left;
     letter-spacing: 1px;
     line-height: 1.5;
-
 }
 
 .info__paragraph::after {
@@ -341,8 +339,6 @@ header {
     background-size: cover;
     position: absolute;
     z-index: 1;
-
-
 }
 
 .info__figure {
@@ -356,7 +352,7 @@ header {
     z-index: 0;
     transform: rotate(45deg);
 }
-/*................................section 4 second part ...................................................*/
+/*................................section 4 second part ......................................................*/
 
 
 .info__second {
@@ -385,7 +381,6 @@ header {
     position: absolute;
     z-index: 1;
     top: 15px;
-
 }
 
 .mobile__figure{
@@ -423,7 +418,6 @@ header {
     letter-spacing: 1px;
     line-height: 1.5;
     padding-top: 30px;
-
 }
 
 .mobile__paragraph::after {
@@ -507,7 +501,6 @@ header {
     margin: 0 auto;
     text-align: center;
     margin-top: 106px;
-
 }
 
 .pricing__header {
@@ -534,13 +527,10 @@ header {
     border-radius: 18px;
     display: flex;
     flex-direction: column;
-
 }
 
 .red__box {
     border:1px solid var(--red-color);
-
-
 }
 
 .pricing__offers .blue__box {
@@ -655,8 +645,6 @@ header {
 .pricing__box__list__checkbox {
     display: block;
     position: relative;
-
-
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -683,7 +671,6 @@ header {
     background-image: url(../images/Close.svg);
     background-position: center;
     background-size: cover;
-
 }
 
 /* On mouse-over, add a grey background color */
@@ -710,9 +697,240 @@ header {
 .pricing__box__list__checkbox input:checked ~ .checkmark:after {
     display: block;
 }
+/*.........................................................................................END OF 5 SECTION....*/
+.form__container {
+    height: 372px ;
+    width: 1352px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 163px;
+}
+
+.form__content {
+    height: 100%;
+    width: 896px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form__info {
+    height: 157px;
+    width: 335px;
+}
+
+.main__form {
+    width: 440px;
+    height: 100%;
+}
+
+.form__title{
+    font-family: var(--second-font);
+    font-size: 44px;
+    font-weight: 400;
+}
+
+.form__text{
+    font-family: var(--main-font);
+    font-size: 14px;
+    margin-top: 22px;
+    font-weight: 400;
+}
+
+.form__icons{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-family: var(--main-font);
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--gray-light);
+    margin-top: 42px;
+    width: 335px;
+}
+
+.form__email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form__email::before {
+    content: url(../images/MailIcon.svg);
+    width: 27px;
+    height: 27px;
+    padding-right: 10px;
+}
+
+.form__phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form__phone::before {
+    content: url(../images/PhoneIcon.svg);
+    width: 27px;
+    height: 27px;
+    padding-right: 10px;
+}
+/*......................................FORM FILD.............................................................*/
+.main__form .form__field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.main__form .form__field label {
+    font-weight: 600;
+    font-size: 11px;
+    margin-bottom: 4px;
+    color: var(--blue-color);
+}
+.main__form .form__field .form__input {
+    font-size: 14px;
+    padding: 8px 0;
+    border: none;
+    border-bottom: 1px solid var(--gray-light);
+}
+
+.form__enclosure{
+    font-size: 12px;
+    padding-top: 30px;
+    color: var(--gray-dark);
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+}
+
+.form__box__checkbox {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+/* Hide the browser's default checkbox */
+.form__box__checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+
+}
+
+/* Create a custom checkbox */
 
 
+.checkmark__form {
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    background-image: url(../images/Checkmark.svg);
+    background-position: center;
+    background-size: cover;
 
+}
 
+/* On mouse-over, add a grey background color */
+.form__box__checkbox:hover input ~ .checkmark {
+    background-color: #ccc;
+    border-radius: 6px;
 
+}
 
+/* When the checkbox is checked, add a blue background */
+.form__box__checkbox input:checked ~ .checkmark {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark__form:after {
+    content: "";
+    position: absolute;
+    display: none;
+
+}
+
+/* Show the checkmark when checked */
+.form__box__checkbox input:checked ~ .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.form__paragraph{
+    padding-left: 35px;
+}
+
+.main__form .form__button {
+    background-color: var(--blue-color);
+    display: inline-block;
+    box-shadow: 5px 10px 14px #07ACE629;
+    padding: 20px 97px;
+    color: white;
+    border-radius: 35px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+/*......................................................................................END OF 6 SECTION ....*/
+
+.footer {
+    box-shadow: 0px -5px 40px #00000029;
+    font-family: var(--main-font);
+}
+
+.footer__container {
+    max-width: 1352px;
+    height: 89px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFFFFF 0 0 no-repeat padding-box;
+    opacity: 1;
+}
+
+.footer .footer__container .footer__logo .rights_text {
+    font-size: 11px;
+    color: var(--gray-light);
+    padding-top: 6px;
+    padding-left: 40px;
+}
+
+.footer .footer__container .footer__icon {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer .footer__container .footer__icon .tweeter__icon {
+    background-image: url(../images/Twitter.svg);
+    width: 24px;
+    height: 24px;
+}
+
+.footer .footer__container .footer__icon .facebook__icon {
+    background-image: url(../images/Facebook.svg);
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
