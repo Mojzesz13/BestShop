@@ -770,9 +770,7 @@ header {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-
 }
-
 /* Hide the browser's default checkbox */
 .form__box__checkbox input {
     position: absolute;
@@ -782,34 +780,49 @@ header {
     width: 0;
 
 }
-
 /* Create a custom checkbox */
-
-
+.form__box__checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Hide the browser's default checkbox */
+.form__box__checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+/* Create a custom checkbox */
 .checkmark__form {
     position: absolute;
-    height: 11px;
-    width: 11px;
-    background-image: url(../images/Checkmark.svg);
-    background-position: center;
-    background-size: cover;
+    top: 0;
+    left: 40px;
+    height: 14px;
+    width: 14px;
+    background-color: #eee;
     border-radius: 4px;
     border: 1px solid var(--gray-light);
-
 }
 
 /* On mouse-over, add a grey background color */
-.form__box__checkbox:hover input ~ .checkmark {
+.form__box__checkbox:hover input ~ .checkmark__form {
     background-color: #ccc;
-    border-radius: 6px;
-
 }
 
 /* When the checkbox is checked, add a blue background */
-.form__box__checkbox input:checked ~ .checkmark {
-    content: "";
-    position: absolute;
-    display: none;
+.form__box__checkbox input:checked ~ .checkmark__form {
+    background-image: url(../images/Checkmark.svg);
+    background-position: center;
+    background-size: cover;
 }
 
 /* Create the checkmark/indicator (hidden when not checked) */
@@ -817,20 +830,11 @@ header {
     content: "";
     position: absolute;
     display: none;
-
 }
 
 /* Show the checkmark when checked */
-.form__box__checkbox input:checked ~ .checkmark:after {
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+.form__box__checkbox input:checked ~ .checkmark__form:after {
+    display: block;
 }
 
 .form__paragraph{
