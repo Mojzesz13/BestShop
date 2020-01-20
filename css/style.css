@@ -7,10 +7,12 @@
     --gray-dark: #707070;
     --gray-medium: #95989A;
     --gray-light: #A5A5A5;
+
 }
 
 * {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 body {
@@ -35,7 +37,7 @@ header {
 
 .header__logo {
     text-align: left;
-    font-size: 32px;
+    font-size: 2em;
     letter-spacing: 0;
     color: var(--blue-color);
     opacity: 1;
@@ -587,7 +589,7 @@ header {
     font-family: var(--main-font);
     text-transform: uppercase;
     display: inline-block;
-    margin-top: 80px;
+    margin-top: 85px;
 }
 
 .pricing__section__btn__blue {
@@ -625,7 +627,6 @@ header {
     border-radius: 23px;
     color: white;
 }
-/*.....................................................................checkbox................................*/
 
 .pricing__box__list {
 
@@ -639,64 +640,18 @@ header {
     justify-content: center;
 }
 
-
-
-/* Customize the label (the container) */
-.pricing__box__list__checkbox {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+.pricing__box__list ul li {
+    list-style-image: url(../images/Ckechmark-1.svg);
 }
 
-/* Hide the browser's default checkbox */
-.pricing__box__list__checkbox input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
+.list__blue ul li:last-child {
+    list-style-image: url(../images/Close.svg);
 }
 
-/* Create a custom checkbox */
-.checkmark {
-    position: absolute;
-    top: 10px;
-    left: 105px;
-    height: 11px;
-    width: 11px;
-    background-image: url(../images/Close.svg);
-    background-position: center;
-    background-size: cover;
+.list__red ul li:nth-child(1n+4){
+    list-style-image: url(../images/Close.svg);
 }
 
-/* On mouse-over, add a grey background color */
-.pricing__box__list__checkbox:hover input ~ .checkmark {
-    background-color: #ccc;
-    border-radius: 6px;
-}
-
-/* When the checkbox is checked, add a blue background */
-.pricing__box__list__checkbox input:checked ~ .checkmark {
-    background-image: url(../images/Ckechmark-1.svg);
-    background-position: center;
-    background-size: cover;
-}
-
-/* Create the checkmark/indicator (hidden when not checked) */
-.checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-/* Show the checkmark when checked */
-.pricing__box__list__checkbox input:checked ~ .checkmark:after {
-    display: block;
-}
 /*.........................................................................................END OF 5 SECTION....*/
 .form__container {
     height: 372px ;
@@ -727,20 +682,20 @@ header {
     height: 100%;
 }
 
-.form__title{
+.form__title {
     font-family: var(--second-font);
-    font-size: 44px;
+    font-size: 48px;
     font-weight: 400;
 }
 
-.form__text{
+.form__text {
     font-family: var(--main-font);
     font-size: 14px;
     margin-top: 22px;
     font-weight: 400;
 }
 
-.form__icons{
+.form__icons {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -838,6 +793,8 @@ header {
     background-image: url(../images/Checkmark.svg);
     background-position: center;
     background-size: cover;
+    border-radius: 4px;
+    border: 1px solid var(--gray-light);
 
 }
 
@@ -920,6 +877,7 @@ header {
 .footer .footer__container .footer__icon {
     display: flex;
     flex-direction: row;
+    padding-right: 40px;
 }
 
 .footer .footer__container .footer__icon .tweeter__icon {
